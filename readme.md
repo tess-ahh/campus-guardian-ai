@@ -40,7 +40,9 @@ The system uses real-time video processing, object detection, tracking, face rec
 
 ## Project Status
 
-Current phase: Planning and repository setup.
+Current Phase: Phase 1 - OpenCV Video Pipeline
+
+Completed: Phase 0 - Project Setup and Planning
 
 ## Documentation
 
