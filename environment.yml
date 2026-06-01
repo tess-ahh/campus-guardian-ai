@@ -1,0 +1,22 @@
+name: campus-guardian-ai
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - opencv
+  - pip:
+      - ultralytics
+      - fastapi
+      - uvicorn[standard]
+      - python-dotenv
+      - pydantic
+      - sqlalchemy
+      - psycopg2-binary
+      - pytest
