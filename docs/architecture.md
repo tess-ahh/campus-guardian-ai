@@ -59,32 +59,32 @@ The system combines **Computer Vision**, **Machine Learning**, **Backend APIs**,
 ┌──────────────────────────────┐
 │       FastAPI Backend        │
 │                              │
-│ • REST APIs                 │
-│ • Alert Management          │
-│ • Incident Management       │
-│ • Authentication            │
+│ • REST APIs                  │
+│ • Alert Management           │
+│ • Incident Management        │
+│ • Authentication             │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
 │      PostgreSQL Database     │
 │                              │
-│ • Incidents                 │
-│ • Users                     │
-│ • Cameras                   │
-│ • Alerts                    │
-│ • Attendance                │
+│ • Incidents                  │
+│ • Users                      │
+│ • Cameras                    │
+│ • Alerts                     │
+│ • Attendance                 │
 └──────────────┬───────────────┘
                │
                ▼
 ┌──────────────────────────────┐
 │      React Dashboard         │
 │                              │
-│ • Live Monitoring           │
-│ • Incident Logs             │
-│ • Analytics                 │
-│ • Attendance Tracking       │
-│ • Reports & Insights        │
+│ • Live Monitoring            │
+│ • Incident Logs              │
+│ • Analytics                  │
+│ • Attendance Tracking        │
+│ • Reports & Insights         │
 └──────────────────────────────┘
 ```
 
