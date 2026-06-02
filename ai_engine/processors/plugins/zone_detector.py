@@ -10,7 +10,7 @@ class ZoneDetectorPlugin(FramePlugin):
         if context is None:
             return frame, {}
 
-        tracks = context.get("tracks", [])
+        tracks = context.get("tracks", {})
 
         zone_events = []
 
@@ -22,6 +22,7 @@ class ZoneDetectorPlugin(FramePlugin):
                     "id": obj_id
                 })
 
-        context["zone_events"] = zone_events
+        existing_events = context.get("events", [])
+        context["events"] = existing_events + zone_events
 
         return frame, context
