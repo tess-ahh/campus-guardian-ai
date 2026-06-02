@@ -4966,5 +4966,257 @@
     "id": 0,
     "duration": 10.39,
     "timestamp": "2026-06-02T20:28:05.279088"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.08,
+    "timestamp": "2026-06-02T20:32:28.766458"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.21,
+    "timestamp": "2026-06-02T20:32:28.905228"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.36,
+    "timestamp": "2026-06-02T20:32:29.049265"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.49,
+    "timestamp": "2026-06-02T20:32:29.185268"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.62,
+    "timestamp": "2026-06-02T20:32:29.310806"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 1,
+    "duration": 2.77,
+    "timestamp": "2026-06-02T20:32:29.463426"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.05,
+    "timestamp": "2026-06-02T20:32:32.740814"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.18,
+    "timestamp": "2026-06-02T20:32:32.872063"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.33,
+    "timestamp": "2026-06-02T20:32:33.022630"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.47,
+    "timestamp": "2026-06-02T20:32:33.163209"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.61,
+    "timestamp": "2026-06-02T20:32:33.304514"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.75,
+    "timestamp": "2026-06-02T20:32:33.445665"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 2.89,
+    "timestamp": "2026-06-02T20:32:33.584231"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.03,
+    "timestamp": "2026-06-02T20:32:33.723717"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.16,
+    "timestamp": "2026-06-02T20:32:33.850187"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.29,
+    "timestamp": "2026-06-02T20:32:33.984805"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.44,
+    "timestamp": "2026-06-02T20:32:34.135064"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.59,
+    "timestamp": "2026-06-02T20:32:34.284314"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.72,
+    "timestamp": "2026-06-02T20:32:34.409385"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.85,
+    "timestamp": "2026-06-02T20:32:34.537153"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 3.98,
+    "timestamp": "2026-06-02T20:32:34.669236"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.12,
+    "timestamp": "2026-06-02T20:32:34.809984"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.24,
+    "timestamp": "2026-06-02T20:32:34.934528"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.37,
+    "timestamp": "2026-06-02T20:32:35.056645"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.51,
+    "timestamp": "2026-06-02T20:32:35.203188"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.65,
+    "timestamp": "2026-06-02T20:32:35.343542"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.78,
+    "timestamp": "2026-06-02T20:32:35.473467"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 4,
+    "duration": 4.93,
+    "timestamp": "2026-06-02T20:32:35.624882"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.07,
+    "timestamp": "2026-06-02T20:32:37.899112"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.2,
+    "timestamp": "2026-06-02T20:32:38.034981"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.34,
+    "timestamp": "2026-06-02T20:32:38.168159"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.48,
+    "timestamp": "2026-06-02T20:32:38.311067"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.63,
+    "timestamp": "2026-06-02T20:32:38.455626"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.77,
+    "timestamp": "2026-06-02T20:32:38.604022"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 2.91,
+    "timestamp": "2026-06-02T20:32:38.741407"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.03,
+    "timestamp": "2026-06-02T20:32:38.861977"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.16,
+    "timestamp": "2026-06-02T20:32:38.989770"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.3,
+    "timestamp": "2026-06-02T20:32:39.127383"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.44,
+    "timestamp": "2026-06-02T20:32:39.265452"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.57,
+    "timestamp": "2026-06-02T20:32:39.400605"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.71,
+    "timestamp": "2026-06-02T20:32:39.540374"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 6,
+    "duration": 3.86,
+    "timestamp": "2026-06-02T20:32:39.688098"
   }
 ]

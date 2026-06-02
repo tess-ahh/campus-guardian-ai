@@ -1,44 +1,42 @@
+import json
+import os
+
+
 class ZoneManager:
     def __init__(self):
-        """
-        Zone definitions for Campus Guardian AI.
+        self.zone_file = "data/zones.json"
+        self.zones = self.load_zones()
 
-        bbox format:
-        (x1, y1, x2, y2)
+    def load_zones(self):
+        """
+        Load zones from JSON file.
         """
 
-        self.zones = {
+        if os.path.exists(self.zone_file):
+
+            with open(self.zone_file, "r") as file:
+                return json.load(file)
+
+        print("⚠ No zones.json found. Using default zone.")
+
+        return {
             "restricted_zone": {
-                "bbox": (200, 100, 500, 400),
-                "color": (0, 0, 255),  # Red (BGR)
+                "bbox": [200, 100, 500, 400],
+                "color": [0, 0, 255],
                 "label": "Restricted Area",
             }
         }
 
     def get_zones(self):
-        """
-        Return all configured zones.
-        """
         return self.zones
 
     def check_inside(self, bbox, zone_name):
-        """
-        Check whether a detected object overlaps with a zone.
-
-        Args:
-            bbox: (x1, y1, x2, y2) of detected object
-            zone_name: zone identifier
-
-        Returns:
-            bool
-        """
 
         zone = self.zones[zone_name]
 
         zx1, zy1, zx2, zy2 = zone["bbox"]
         x1, y1, x2, y2 = bbox
 
-        # Simple overlap check
         return not (
             x2 < zx1 or
             x1 > zx2 or
