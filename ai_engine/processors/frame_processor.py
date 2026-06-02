@@ -25,7 +25,27 @@ class FrameProcessor:
         for plugin in self.plugins:
             frame, context = plugin.process(frame, context)
 
-        # 🟢 Optional global overlay (kept from earlier stage)
+        # 🧠 EVENT VISUALIZATION (NEW)
+        events = context.get("events", [])
+
+        y_offset = 160
+
+        for event in events:
+            text = f"⚠ {event['type']} | ID {event['id']} | {event['duration']}s"
+
+            cv2.putText(
+                frame,
+                text,
+                (20, y_offset),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.7,
+                (0, 0, 255),  # red alert
+                2
+            )
+
+            y_offset += 30
+
+        # 🟢 base overlay
         cv2.putText(
             frame,
             "Frame Processor Active",
