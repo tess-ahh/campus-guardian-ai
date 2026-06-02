@@ -32,3 +32,5 @@ class VideoPipelineConfig:
             snapshot_dir=Path(os.getenv("SNAPSHOT_DIR", "data/snapshots")),
             output_dir=Path(os.getenv("OUTPUT_DIR", "data/outputs")),
         )
+YOLO_MODEL_PATH = "yolov8n.pt"
+YOLO_CONFIDENCE_THRESHOLD = 0.4
