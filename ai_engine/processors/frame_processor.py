@@ -2,6 +2,7 @@ import cv2
 
 from ai_engine.processors.plugins.detector import DetectorPlugin
 from ai_engine.processors.plugins.tracker import TrackerPlugin
+from ai_engine.processors.plugins.event_engine import EventEnginePlugin
 
 
 class FrameProcessor:
@@ -10,6 +11,7 @@ class FrameProcessor:
         self.plugins = [
             DetectorPlugin(),
             TrackerPlugin(),
+            EventEnginePlugin(),
         ]
 
     def process(self, frame):
