@@ -1,7 +1,16 @@
 {
-  "restricted_zone": {
-    "bbox": [200, 100, 500, 400],
-    "color": [0, 0, 255],
-    "label": "Restricted Area"
-  }
+    "restricted_zone": {
+        "bbox": [
+            37,
+            62,
+            211,
+            206
+        ],
+        "color": [
+            0,
+            0,
+            255
+        ],
+        "label": "Restricted Area"
+    }
 }
