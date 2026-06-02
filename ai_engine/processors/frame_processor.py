@@ -13,7 +13,7 @@ class FrameProcessor:
             DetectorPlugin(),
             TrackerPlugin(),
             EventEnginePlugin(),
-            ZoneDetectorPlugin(),   # 🔥 ADDED
+            ZoneDetectorPlugin(),
         ]
 
     def process(self, frame):
@@ -27,13 +27,37 @@ class FrameProcessor:
         for plugin in self.plugins:
             frame, context = plugin.process(frame, context)
 
-        # 🧠 EVENT VISUALIZATION (includes loitering + intrusion)
+        # 🟥 ZONE VISUALIZATION (NEW)
+        zones = context.get("zones", {})
+
+        for zone_name, zone_data in zones.items():
+
+            x1, y1, x2, y2 = zone_data["bbox"]
+
+            cv2.rectangle(
+                frame,
+                (x1, y1),
+                (x2, y2),
+                zone_data["color"],
+                2
+            )
+
+            cv2.putText(
+                frame,
+                zone_data["label"],
+                (x1, y1 - 10),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.7,
+                zone_data["color"],
+                2
+            )
+
+        # 🧠 EVENT VISUALIZATION
         events = context.get("events", [])
 
         y_offset = 160
 
         for event in events:
-            # handle both event types safely
             event_type = event.get("type", "EVENT")
             obj_id = event.get("id", "UNKNOWN")
             duration = event.get("duration", None)
@@ -55,7 +79,7 @@ class FrameProcessor:
 
             y_offset += 30
 
-        # 🟢 base overlay
+        # 🟢 Base overlay
         cv2.putText(
             frame,
             "Frame Processor Active",

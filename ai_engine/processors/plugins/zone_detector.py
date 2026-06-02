@@ -25,4 +25,7 @@ class ZoneDetectorPlugin(FramePlugin):
         existing_events = context.get("events", [])
         context["events"] = existing_events + zone_events
 
+        # 🆕 Make zone information available to the UI layer
+        context["zones"] = self.zone_manager.get_zones()
+
         return frame, context
