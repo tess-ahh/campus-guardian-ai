@@ -1,6 +1,8 @@
 import time
+
 from ai_engine.processors.base import FramePlugin
 from ai_engine.logging.event_logger import EventLogger
+from ai_engine.evidence.evidence_manager import EvidenceManager
 
 
 class EventEnginePlugin(FramePlugin):
@@ -9,8 +11,11 @@ class EventEnginePlugin(FramePlugin):
         self.last_seen = {}
         self.alert_threshold = 2  # seconds (testing value)
 
-        # 🧠 persistent logger (NEW)
+        # Logging
         self.logger = EventLogger()
+
+        # 📸 Evidence manager
+        self.evidence_manager = EvidenceManager()
 
     def process(self, frame, context=None):
         if context is None:
@@ -23,15 +28,15 @@ class EventEnginePlugin(FramePlugin):
 
         for obj_id in tracks.keys():
 
-            # 🧠 FIRST SEEN (stable memory)
             if obj_id not in self.first_seen:
                 self.first_seen[obj_id] = current_time
 
-            # 🧠 KEEP ALIVE SIGNAL
             self.last_seen[obj_id] = current_time
 
-            # ⏱ duration calculation
-            duration = self.last_seen[obj_id] - self.first_seen[obj_id]
+            duration = (
+                self.last_seen[obj_id]
+                - self.first_seen[obj_id]
+            )
 
             if duration > self.alert_threshold:
 
@@ -43,13 +48,33 @@ class EventEnginePlugin(FramePlugin):
 
                 events.append(event)
 
-                # 💾 SAVE EVENT TO FILE (NEW)
+                # 💾 Log event
                 try:
                     self.logger.log_event(event)
                 except Exception as e:
                     print("⚠ Logger error:", e)
 
-        # 🧪 Debug output
+                # 📸 Capture evidence image
+                try:
+                    snapshot_path = (
+                        self.evidence_manager.save_snapshot(
+                            frame,
+                            event["type"]
+                        )
+                    )
+
+                    if snapshot_path:
+                        print(
+                            f"📸 Evidence saved: "
+                            f"{snapshot_path}"
+                        )
+
+                except Exception as e:
+                    print(
+                        "⚠ Evidence capture error:",
+                        e
+                    )
+
         if events:
             print("🚨 EVENTS TRIGGERED:", events)
 
