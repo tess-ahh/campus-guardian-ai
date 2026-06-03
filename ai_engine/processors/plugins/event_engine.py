@@ -3,6 +3,7 @@ import time
 from ai_engine.processors.base import FramePlugin
 from ai_engine.logging.event_logger import EventLogger
 from ai_engine.evidence.evidence_manager import EvidenceManager
+from ai_engine.evidence.incident_manager import IncidentManager
 
 
 class EventEnginePlugin(FramePlugin):
@@ -16,6 +17,9 @@ class EventEnginePlugin(FramePlugin):
 
         # 📸 Evidence manager
         self.evidence_manager = EvidenceManager()
+
+        # 📝 Incident manager
+        self.incident_manager = IncidentManager()
 
     def process(self, frame, context=None):
         if context is None:
@@ -67,6 +71,18 @@ class EventEnginePlugin(FramePlugin):
                         print(
                             f"📸 Evidence saved: "
                             f"{snapshot_path}"
+                        )
+
+                        # 📝 Create incident record
+                        self.incident_manager.create_incident(
+                            event_type=event["type"],
+                            object_id=event["id"],
+                            evidence_image=snapshot_path,
+                        )
+
+                        print(
+                            f"📝 Incident recorded "
+                            f"for object {event['id']}"
                         )
 
                 except Exception as e:

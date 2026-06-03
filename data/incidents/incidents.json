@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "event_type": "LOITERING_WARNING",
+        "object_id": 0,
+        "timestamp": "2026-06-03T16:00:40.461086",
+        "evidence_image": "data\\incidents\\loitering_warning_20260603_160040.jpg"
+    },
+    {
+        "event_type": "LOITERING_WARNING",
+        "object_id": 0,
+        "timestamp": "2026-06-03T16:00:50.554476",
+        "evidence_image": "data\\incidents\\loitering_warning_20260603_160050.jpg"
+    }
+]
