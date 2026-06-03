@@ -31,7 +31,13 @@ class IncidentManager:
         except Exception:
             incidents = []
 
+        # 🆔 Generate unique incident ID
+        incident_id = (
+            f"INC-{len(incidents) + 1:06d}"
+        )
+
         incident = {
+            "incident_id": incident_id,
             "event_type": event_type,
             "object_id": object_id,
             "timestamp": datetime.now().isoformat(),
