@@ -14,5 +14,13 @@
         "object_id": 11,
         "timestamp": "2026-06-03T22:15:52.248950",
         "evidence_image": "data\\incidents\\loitering_warning_20260603_221552.jpg"
+    },
+    {
+        "incident_id": "INC-000003",
+        "event_type": "LOITERING_WARNING",
+        "severity": "MEDIUM",
+        "object_id": 0,
+        "timestamp": "2026-06-03T23:14:36.059142",
+        "evidence_image": "data\\incidents\\loitering_warning_20260603_231436.jpg"
     }
 ]

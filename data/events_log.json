@@ -8896,5 +8896,47 @@
     "id": 11,
     "duration": 4.61,
     "timestamp": "2026-06-03T22:15:54.727223"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.04,
+    "timestamp": "2026-06-03T23:14:35.954084"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.24,
+    "timestamp": "2026-06-03T23:14:36.153205"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.4,
+    "timestamp": "2026-06-03T23:14:36.312187"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.55,
+    "timestamp": "2026-06-03T23:14:36.460379"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.72,
+    "timestamp": "2026-06-03T23:14:36.630155"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 2.89,
+    "timestamp": "2026-06-03T23:14:36.798800"
+  },
+  {
+    "type": "LOITERING_WARNING",
+    "id": 0,
+    "duration": 3.04,
+    "timestamp": "2026-06-03T23:14:36.951011"
   }
 ]
