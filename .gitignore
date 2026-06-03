@@ -55,3 +55,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Generated evidence images
+data/incidents/*.jpg
+data/incidents/*.png
