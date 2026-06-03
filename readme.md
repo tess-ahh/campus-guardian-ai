@@ -40,6 +40,7 @@ The system uses real-time video processing, object detection, tracking, face rec
 
 ## Project Status
 
+Current Phase: Phase 5 - Face Recognition
 Current Phase: Phase 4 - Evidence & Incident Management
 
 Completed:
@@ -47,6 +48,7 @@ Completed:
 - ✅ Phase 1 - OpenCV Video Pipeline
 - ✅ Phase 2 - Object Detection & Tracking
 - ✅ Phase 3 - Behavior Intelligence
+- ✅ Phase 4 - Evidence & Incident Management
 
 ## Documentation
 
