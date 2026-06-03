@@ -17,6 +17,17 @@ class IncidentManager:
         if not self.incident_file.exists():
             self.incident_file.write_text("[]")
 
+    def get_severity(self, event_type):
+        severity_map = {
+            "LOITERING_WARNING": "MEDIUM",
+            "INTRUSION": "HIGH",
+        }
+
+        return severity_map.get(
+            event_type,
+            "LOW"
+        )
+
     def create_incident(
         self,
         event_type,
@@ -39,6 +50,7 @@ class IncidentManager:
         incident = {
             "incident_id": incident_id,
             "event_type": event_type,
+            "severity": self.get_severity(event_type),
             "object_id": object_id,
             "timestamp": datetime.now().isoformat(),
             "evidence_image": evidence_image,
