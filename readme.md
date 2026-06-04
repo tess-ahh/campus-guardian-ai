@@ -40,8 +40,8 @@ The system uses real-time video processing, object detection, tracking, face rec
 
 ## Project Status
 
-Current Phase: Phase 5 - Face Recognition
-Current Phase: Phase 4 - Evidence & Incident Management
+Current Phase: Phase 7 - Dashboard Development
+
 
 Completed:
 - ✅ Phase 0 - Project Setup & Planning
@@ -49,6 +49,8 @@ Completed:
 - ✅ Phase 2 - Object Detection & Tracking
 - ✅ Phase 3 - Behavior Intelligence
 - ✅ Phase 4 - Evidence & Incident Management
+- ✅ Phase 5 - Face Recognition
+- ✅ Phase 6: FastAPI Backend
 
 ## Documentation
 
