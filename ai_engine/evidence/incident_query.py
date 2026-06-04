@@ -1,3 +1,4 @@
+
 import json
 from pathlib import Path
 
@@ -33,3 +34,13 @@ class IncidentQuery:
             for incident in incidents
             if incident.get("severity") == severity
         ]
+
+    def get_by_event_type(self, event_type):
+        incidents = self.load_incidents()
+
+        return [
+            incident
+            for incident in incidents
+            if incident.get("event_type") == event_type
+        ]
+

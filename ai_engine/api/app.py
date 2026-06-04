@@ -31,6 +31,13 @@ def get_incidents_by_severity(severity: str):
     )
 
 
+@app.get("/incidents/type/{event_type}")
+def get_incidents_by_type(event_type: str):
+    return query.get_by_event_type(
+        event_type.upper()
+    )
+
+
 @app.get("/incidents/{incident_id}")
 def get_incident(incident_id: str):
     incident = query.get_by_id(
@@ -48,3 +55,4 @@ def get_incident(incident_id: str):
 @app.get("/stats")
 def get_stats():
     return stats.get_summary()
+
