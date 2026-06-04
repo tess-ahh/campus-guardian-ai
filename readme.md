@@ -48,8 +48,8 @@ Completed:
 - ✅ Phase 1 - OpenCV Video Pipeline
 - ✅ Phase 2 - Object Detection & Tracking
 - ✅ Phase 3 - Behavior Intelligence
-- ✅ Phase 4 - Evidence & Incident Management
-- ✅ Phase 5 - Face Recognition
+- ✅ Phase 4 - Evidence  Management
+- ✅ Phase 5 - Incident management
 - ✅ Phase 6: FastAPI Backend
 
 ## Documentation
