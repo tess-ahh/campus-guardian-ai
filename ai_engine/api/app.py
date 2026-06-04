@@ -1,4 +1,3 @@
-
 from fastapi import FastAPI
 
 from ai_engine.evidence.incident_query import IncidentQuery
@@ -25,6 +24,13 @@ def get_incidents():
     return query.load_incidents()
 
 
+@app.get("/incidents/severity/{severity}")
+def get_incidents_by_severity(severity: str):
+    return query.get_by_severity(
+        severity.upper()
+    )
+
+
 @app.get("/incidents/{incident_id}")
 def get_incident(incident_id: str):
     incident = query.get_by_id(
@@ -42,4 +48,3 @@ def get_incident(incident_id: str):
 @app.get("/stats")
 def get_stats():
     return stats.get_summary()
-
